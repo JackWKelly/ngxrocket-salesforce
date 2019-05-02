@@ -10,6 +10,7 @@ import { CoreModule } from '@app/core';
 import { SharedModule } from '@app/shared';
 import { MaterialModule } from '@app/material.module';
 import { FaqRoutingModule } from './faqs-routing.module';
+import { FaqDataService } from './faq-data.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { FaqRoutingModule } from './faqs-routing.module';
     FaqRoutingModule
   ],
   providers: [
-   
+    FaqDataService
   ]
 })
 export class FaqsModule { }
