@@ -1,3 +1,8 @@
-<p>
-  relevant-faqs works!
-</p>
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let faq of faqs">
+    <mat-expansion-panel-header>
+      {{ faq.name }}
+    </mat-expansion-panel-header>
+    {{ faq.content }}
+  </mat-expansion-panel>
+</mat-accordion>
